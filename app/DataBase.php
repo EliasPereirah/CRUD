@@ -28,7 +28,6 @@ class DataBase
         return false;
     }
 
-
     public function select($sql, array $binds)
     {
         $stmt = $this->PDO->prepare($sql);
