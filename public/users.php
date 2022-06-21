@@ -9,7 +9,7 @@
     <h3>Lista de Usuários</h3>
     <?php
     require('../app/Database.php');
-    $DataBase = new Database();
+    $Database = new Database();
     $sql = "SELECT * FROM usuarios WHERE id > :id";
     $binds = ['id' => 1];
     $result  = $Database->select($sql, $binds);
