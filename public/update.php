@@ -8,7 +8,7 @@
 <div class="crud">
     <h3>Exclusão de Dados</h3>
     <?php
-    require('../app/DataBase.php');
+    require('../app/Database.php');
     $DataBase = new DataBase();
     $sql = "UPDATE usuarios SET descricao = :descricao WHERE id = :id";
     $binds = ['descricao'=>'Sou a Joana, mas pode me chamar de jô.','id'=> 4];
