@@ -19,7 +19,7 @@
      $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
      $descricao = filter_input(INPUT_POST, 'descricao', FILTER_SANITIZE_SPECIAL_CHARS);
      if(!empty($nome) && !empty($email) && !empty($descricao)){
-         $DataBase = new Database();
+         $Database = new Database();
          $sql = "INSERT INTO usuarios SET nome = :nome, email = :email, descricao = :descricao";
          $binds = ['nome' => $nome, 'email' => $email, 'descricao' => $descricao];
          $result = $Database->insert($sql, $binds);
