@@ -9,7 +9,7 @@
     <h3>Atualização de Dados</h3>
     <?php
     require('../app/Database.php');
-    $DataBase = new Database();
+    $Database = new Database();
     $sql = "DELETE FROM usuarios WHERE id = :id";
     $binds = ['id'=> 3];
     $result = $Database->delete($sql, $binds);
