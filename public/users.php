@@ -9,10 +9,10 @@
     <h3>Lista de Usuários</h3>
     <?php
     require('../app/Database.php');
-    $DataBase = new DataBase();
+    $DataBase = new Database();
     $sql = "SELECT * FROM usuarios WHERE id > :id";
     $binds = ['id' => 1];
-    $result  = $DataBase->select($sql, $binds);
+    $result  = $Database->select($sql, $binds);
     if($result->rowCount() >0){
         $dados = $result->fetchAll(PDO::FETCH_OBJ);
         foreach ($dados as $item){
