@@ -8,7 +8,7 @@
 <div class="crud">
     <h3>Lista de Usuários</h3>
     <?php
-    require('../app/DataBase.php');
+    require('../app/Database.php');
     $DataBase = new DataBase();
     $sql = "SELECT * FROM usuarios WHERE id > :id";
     $binds = ['id' => 1];
