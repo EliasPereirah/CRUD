@@ -8,7 +8,7 @@
 <div class="crud">
     <h3>Atualização de Dados</h3>
     <?php
-    require('../app/DataBase.php');
+    require('../app/Database.php');
     $DataBase = new DataBase();
     $sql = "DELETE FROM usuarios WHERE id = :id";
     $binds = ['id'=> 3];
