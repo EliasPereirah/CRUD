@@ -1,5 +1,5 @@
 # CRUD
-Essa é uma classe CRUD simples mas muito funcional pera realizar as quatros operações básicas no SQL (CREATE - READ - UPDATE - DELETE)
+Essa é uma classe CRUD simples mas muito funcional para realizar as quatros operações básicas no SQL (CREATE - READ - UPDATE - DELETE)
 
 # USO - exemplo para select
 ```php
