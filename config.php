@@ -1,3 +1,4 @@
+<?php
 const PRODUCTION = false;
 
 #DATABASE CONFIG
